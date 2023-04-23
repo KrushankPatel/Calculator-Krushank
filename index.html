@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- <================Meta Tags==================> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- <================Title==================> -->
+    <title>Calculator</title>
+
+
+    <!-- <================CSS==================> -->
+    <link rel="stylesheet" href="CSS/index.css">
+
+
+
+
+    <!-- <===============font-family============> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="Body-container">
+
+        <main>
+            <div class="main-container">
+                <div class="div1" id="inputBox">0</div>
+                <div class="Left-container">
+                    <div class="div3 font-2em" onclick="displayToScreen('/')">&#x00F7;</div>
+                    <div class="div4 font-2em" onclick="displayToScreen('*')">×</div>
+                    <div class="div-mod" onclick="displayToScreen('%')">%</div>                              
+                    <div class="div8" onclick="displayToScreen('9')">9</div>
+                    <div class="div7" onclick="displayToScreen('8')">8</div>
+                    <div class="div6" onclick="displayToScreen('7')">7</div>
+                    <div class="div12" onclick="displayToScreen('6')">6</div>
+                    <div class="div11" onclick="displayToScreen('5')">5</div>
+                    <div class="div10" onclick="displayToScreen('4')">4</div>
+                    <div class="div16" onclick="displayToScreen('3')">3</div>
+                    <div class="div15" onclick="displayToScreen('2')">2</div>
+                    <div class="div14" onclick="displayToScreen('1')">1</div>
+                    <div class="div2" onclick="clearScreen()">C</div>
+                    <div class="zero-div" onclick="displayToScreen('0')">0</div>
+                    <div class="dot-div" onclick="displayToScreen('.')">.</div>
+                </div>
+
+                <div class="Right-container">
+                    <div class="div5" onclick="clearAllScreen()">AC</div>
+                    <div class="div9 font-2em" onclick="displayToScreen('-')">-</div>
+                    <div class="div13" onclick="displayToScreen('+')">+</div>
+                    <div class="div17" id="div-17" onclick="total()">=</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+    <!-- <=======================Javascript====================> -->
+    <script src="Javascript/index.js" defer></script>
+
+</body>
+
+</html>
